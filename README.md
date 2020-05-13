@@ -119,11 +119,9 @@ a = 070
 - 第二种，在网页中，&#十进制编码
 ```JS
 第一种：
-<head>
-    <script>
-        console.log("\u2620");
-    </script>
-</head>
+<script>
+    console.log("\u2620");
+</script>
 
 <body>
         <h1 style="font-size: 200px;"> &#9760;</h1>
