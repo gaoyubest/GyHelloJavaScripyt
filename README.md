@@ -1,5 +1,8 @@
 - 此文档为学习并整理的JavaScript笔记，仅用于自行学习使用
 - 打开控制台：F12/ctrl+shift+i/更多工具->开发者工具
+
+[veiw nodes](https://gaoyubest.github.io/GyHelloJavaScripyt)
+
 ## 目录
 
 *   [1.、数据类型&类型转换&包装类](01_数据类型_类型转换_包装类.md)
