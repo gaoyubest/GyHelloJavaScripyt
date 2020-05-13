@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        /*
+        三种逻辑运算符：
+        ！非 两次非可以转换为布尔值
+        &&与
+        ||或
+         */
+        //布尔转换
+        var a = 123;
+        a = !!a;
+        console.log("a=" +a);
+        console.log(typeof a);
+
+        var result1 = 123 && 456;//456
+        result1 = 0 && 2;//0
+        result1 = 2 && 0;//0
+        result1 = NaN && 0; //NaN
+        result1 = 0 && NaN; //0
+
+        console.log("result1=" +result1);
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

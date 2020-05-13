@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        var fun1 = (function() {
+            var count = 0; //只执行一次
+            return function() {
+                console.log(count);
+                count++;
+            }
+        })();//闭包
+        fun1();
+        fun1();
+        fun1();
+        fun1();
+
+        function fun2() {
+            var count = 0; //执行多次，每次重新赋值0
+            console.log(count);
+            count++;
+        }
+        fun2();
+        fun2();
+        fun2();
+        fun2();
+        fun2();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

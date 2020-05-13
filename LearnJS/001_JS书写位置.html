@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="01JS.js"></script>
+    <!--引入外部JS文件不能在编写内部要求，可再建立script标签 -->
+    <script type="text/javascript">
+        alert("我是内部JS代码")
+        /*
+        多行注释
+        */
+        //单行注释
+        //语句以分号结尾
+        //严格区分大小写
+        //JS自动忽略多个空格和换行
+    </script>
+
+    <script type="text/javascript">
+    alert("这是我的第一行JS代码");//控制浏览器弹出一个警告
+    document.write("Hello!");//document.write向body中输出一个内容
+    console.log("Who are you ?");//向控制台输出内容
+    </script>
+
+
+</head>
+<body>
+    <button onclick="alert('单击按钮时执行代码')"> 按钮1</button>
+    <a href="javascript:alert('点我时执行代码')">按钮2</a>
+    <a href="javascript:;)">按钮3</a>
+</body>
+</html>

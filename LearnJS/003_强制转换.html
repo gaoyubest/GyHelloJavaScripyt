@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        /* 类型转换主要是指：将其他类型转换为String、Number、Boolean
+        强制类型转换为字符 方法一：调用被转换类型的toString（）方法
+                          不会影响原变量，会返回转换的结果
+                          null\Undefined没有toString方法
+                   方法二、调用String（）函数
+                          对于Number、Boolean实际上就是调用toString（）方法
+                          对于null直接将null转换为"null"，Undefined同理。
+       强制类型转换为数值 方法一：调用Number（）函数
+                          字符串---->数字：1、纯数字字符串，直接转为数字
+                                          2、有非数字内容，转换为NaN
+                                          3、空串或者全是空格，转换为0
+                          布尔------>数字：true 转为1，false 转为0
+                          Null------>数字：0
+                          Undefined->数字：NaN
+                        方法二：专门用于字符串
+                          parseInt()把字符串转换为整数,将字符串中的有效整数取出，转换为Number
+                          parseFloat（）把字符串转换为浮点数，将字符串中的有效小数取出，转换为Number
+        强制类型转换为布尔 方法一：调用Boolean（）函数
+                          数字----->布尔：除0和NaN，都是true
+                          字符串--->布尔：除空串，都是true
+                          null、Undefined--->布尔：false
+
+        进制问题：
+        16进制的数用0x开头
+        8进制数字用0开头
+        2进制数字用0b开头，不是所有浏览器都支持
+
+
+         */
+        var a = 123;
+        var b = a.toString();
+        // var c = null;
+        // c = c.toString();报错
+        a = 0x10;
+        a = "070"
+        a = parseInt(a,10);//第二个数字表示数字为十进制
+        a = Boolean(a);
+
+        var d = String(a);
+
+        var e = "123";
+        e = Number(e);
+
+        var f = "123px";
+        f = parseInt( f);
+
+        var g = "123.456";
+        g = parseFloat(g);
+
+        console.log(typeof g);
+        console.log(g);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

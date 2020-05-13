@@ -1,0 +1,16 @@
+# Math
+- Math不是构造函数，封装了数学运算的数学和方法
+```js
+console.log(Math.PI);//Π
+console.log(Math.abs(-1));//绝对值
+console.log(Math.ceil(1.4));//向上取整
+console.log(Math.floor(1.4));//向下取整
+console.log(Math.round(1.4));//四舍五入
+console.log(Math.random());//0-1之间随机生成数
+console.log(Math.random()*10);//0-10之间的随机数
+console.log(Math.round(Math.random()*9)+1);//生成1到10之间的整数
+console.log(Math.pow(2,3));//2的3次方
+console.log(Math.sqrt(4));//开方
+var max = Math.max(12,4,67,35);//获取最大值
+var min = Math.min(12,4,67,35);//获取最小值
+```

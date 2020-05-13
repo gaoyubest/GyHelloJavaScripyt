@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // prompt（）可以弹出一个自带文本框的提示框
+        //判断成绩
+        //输入错误数字可再次输入
+        while (true){
+            var score = prompt("输入成绩(0-100)：");
+            if (score >= 0 && score <= 100){
+                break
+            }
+            alert("请输入有效的分数！")
+        }
+        //判断成绩是否是数字
+        if (score >100 || score<0 || isNaN(score)) {
+
+        }
+
+        //计时器
+        console.time("test");
+        console.timeEnd("test");
+    </script>
+</head>
+
+<body>
+<!--    代码技巧-->
+<!--单击按钮没有任何跳转-->
+    <a href="javascript:;)">按钮3</a>
+</body>
+</html>

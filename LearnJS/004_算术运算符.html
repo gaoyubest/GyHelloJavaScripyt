@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        /*
+        运算符也叫操作符
+        +：字符串拼接
+        - * / 运算时自动转换为Number，可以-0 *1 /1 转换为Number
+
+        一元运算符：+ -
+        自增自减：a++、a--等于自增前的值，++a、--a等于自增后的值。
+         */
+        var a = 123;
+        a = + a;//123，正号无影响
+        a++;//124，后自增
+        ++a;//125, 前自增
+        console.log(typeof a);
+
+        result1 = "123" + "456";
+        console.log(result1);//拼串
+
+        result2 = 123 + "321";
+        console.log("result2 = " +result2);//拼串
+
+        result2 = 1 +2 +"3";//33
+        result2 = "1" + 2 + 3;//123
+
+        var b = 123;
+        b = b + ""; // 任意数据类型+"" 即可转换为String类型，等同于b = String（b）
+        console.log("b = " +b);
+        console.log(typeof b);
+
+        result3 = 100 - "1";//99
+        result3 = 100 - true;//99
+        result3 = 1 + +"2" + 3;//6
+
+        var d = 20;
+        var result4 = d++ + ++d +d;//20+ 22 +22
+        console.log(d);
+
+        //利用- * / 进行数据类型转换
+        var c = "123";
+        c = c - 0;
+        console.log(c);
+        console.log(typeof c);
+
+        var n1 = 10;
+        var n2 = 20;
+        var n = n1++; //n1=11 n1++=10
+        console.log("n= " +n); //10
+        console.log("n1= " + n1);//11
+
+        n = ++n1;//n1=12 ++n1=12
+        console.log("n= " + n);//12
+        console.log("n1= " + n1);//12
+
+        n = n2--;//n2=19 n2--=20
+        console.log("n= "+ n);//20
+        console.log("n2= "+ n2);//19
+
+        n = --n2;//n2=18 --n2=18
+        console.log("n= "+n);//18
+        console.log("n2= "+n2);//18
+
+        console.log(1 == "1");
+        console.log(1 === "1");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

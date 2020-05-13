@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var arr = [1,2,5,2,7,7,89,23];
+        for (var i=0;i<arr.length;i++){
+            for (var j=i+1 ;j<arr.length;j++){
+                if (arr[i] === arr[j]){
+                    //如果相等则证明出现相等元素，删除j对应的元素
+                    arr.splice(j,1);
+                    //当删除了j位置后，后边元素自动补位，即练习相等的值未比较
+                    j--;//关解语句
+                }
+            }
+            // console.log(arr);
+        }
+        console.log(arr);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

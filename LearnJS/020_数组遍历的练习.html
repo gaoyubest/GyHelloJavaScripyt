@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        Person.prototype.toString = function () {
+            return "Person[name=" +this.name+" age="+this.age+"]";
+        };
+
+        var person1 = new Person("Alice",24);
+        var person2 = new Person("Tom",21);
+        var person3 = new Person("Never",6);
+
+        var personArr = [person1,person2,person3];
+
+        function getAdult(arr){
+            //创建新数组
+            var newArr = [];
+            //遍历personArr，获取arr中的Person对象
+            for(var i=0; i< personArr.length;i++){
+                var obj = personArr[i];
+                //判断Person对象的age是否大于18,将对象放入新的数组中
+                if (obj.age >= 18){
+                    newArr.push(obj);
+                }
+            }
+            return newArr;
+        }
+        var result = getAdult();
+
+        console.log( "原数组 "+personArr);
+        console.log( "新数组 "+result);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

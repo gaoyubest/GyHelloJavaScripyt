@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function fun(a,b) {
+            // console.log(this.name);
+            console.log("a="+a);
+            console.log("b="+b);
+        }
+        var obj1 = {name:"小明"};
+        var obj2 = {name:"小红"};
+        var obj3 = {
+            name:"小米",
+            sayName:function () {
+                console.log(this.name);
+            }
+        };
+        obj3.sayName();
+        obj3.sayName.apply(obj2);//指定this
+
+        //对函数调用call、apply都会调用函数执行
+         //调用call、apply可以将一个对象指定为第一个参数，此时这个对象将会成为函数执行时的this
+        // fun.call();
+        fun.call(obj1,1,2);//call将实参依次传入
+        fun.apply(obj1,[1,3]);//apple实参封装在数组中
+        // fun.call(obj2);
+        // fun.apply(obj2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

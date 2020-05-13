@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*调用函数时，浏览器每次都会传递两个隐含参数
+        1、函数的上下文对象this
+        2、封装实参对象arguments，arguments是一个类数组对象,可以通过索引来操作数据，也可以获取长度
+             - 在调用函数时，我们所传递的实数会在arguments中保存
+             - 即使不定义形参，也可以传递实参
+             - callee对应的函数对象为正在执行的对象
+
+
+         */
+        function fun() {
+            console.log(Array.isArray(arguments));
+            console.log(arguments.length);//获取实参长度
+            console.log(arguments[1]);
+            console.log(arguments.callee);
+
+        }
+        fun("hello",true);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
