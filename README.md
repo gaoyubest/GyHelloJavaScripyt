@@ -1,5 +1,5 @@
 - 此文档为学习并整理的JavaScript笔记，仅用于自行学习使用
-- 打开控制台：F12/ctrl+shift+i/更多工具->开发者工具
+- 打开控制台：`F12/ctrl+shift+i/更多工具->开发者工具`
 
 [veiw nodes](https://gaoyubest.github.io/GyHelloJavaScripyt)
 
@@ -158,3 +158,6 @@ var obj = new Object();
 obj = null;//此时JS会自动回收
 ```
 ![](./images/GC.png)
+
+Google控制台查看运行结果：
+![](./images/Google.png)
